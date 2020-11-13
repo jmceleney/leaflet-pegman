@@ -6,7 +6,7 @@
  * @link https://github.com/Raruto/leaflet-pegman
  * @desc Leaflet plugin that allows an easy integration with the Google StreetView Service API
  */
-L.Control.Pegman = L.Control.extend({
+export default L.Control.extend({
 	includes: L.Evented ? L.Evented.prototype : L.Mixin.Events,
 	options: {
 		position: 'bottomright',
@@ -602,7 +602,3 @@ L.Control.Pegman = L.Control.extend({
 	},
 
 });
-
-L.control.pegman = function(options) {
-	return new L.Control.Pegman(options);
-};
